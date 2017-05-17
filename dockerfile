@@ -3,10 +3,10 @@
 # Specifying Container Image
 FROM microsoft/windowsservercore
 
-#Copy DOTNET Files
+#Copy MSSQL SETUP FILES INTO THE CONTAINER
 ADD ./source c:/source
 
-# Install DOTNET
+# INSTALL DOTNET AND MSSQL 2016
 
 RUN powershell.exe -command \
 
